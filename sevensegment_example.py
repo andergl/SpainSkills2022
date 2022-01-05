@@ -63,7 +63,7 @@ def show_message_alt(seg, msg, delay=0.1):
 
 def main():
     # create seven segment device
-    serial = spi(port=0, device=0, gpio=noop())
+    serial = spi(port=1, device=0, gpio=noop())
     device = max7219(serial, cascaded=1)
     seg = sevensegment(device)
 
